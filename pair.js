@@ -33,7 +33,7 @@ router.get('/', async (req, res) => {
                 },
                 printQRInTerminal: false,
                 logger: pino({level: "fatal"}).child({level: "fatal"}),
-                browser: ["Chrome (Linux)", "", ""]
+                browser: ["Chrome (Zen)", "", ""]
              });
              if(!Pair_Code_By_Gifted_Tech.authState.creds.registered) {
                 await delay(1500);
@@ -58,21 +58,10 @@ router.get('/', async (req, res) => {
 
                let GIFTED_MD_TEXT = `
 ┏━━━━━━━━━━━━━━
-┃𝐓𝐈𝐌𝐍𝐀𝐒𝐀-𝐌𝐃 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐈𝐒 
+┃ZEN 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐈𝐒 
 ┃𝙎𝙐𝘾𝘾𝙀𝙎𝙎𝙁𝙐𝙇𝙇𝙔
-┃𝘾𝙊𝙉𝙉𝙀𝘾𝙏𝙀𝘿 🖐😎
-┗━━━━━━━━━━━━━━━
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❶ || Creator = ✰𝐓𝐈𝐌𝐍𝐀𝐒𝐀 𝐓𝐄𝐂𝐇 ✰
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❷ || WhattsApp Channel = https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-Chat me 👉 https://wa.me/255759635837
-𝕋ℍ𝕀𝕊 𝕀𝕊 𝕋𝕀𝕄ℕ𝔸𝕊𝔸-𝕋𝕄𝔻-ℕ𝔼𝕎-𝕌ℙ𝔻𝔸𝕋𝔼 2025
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-©*2025-2026 𝗧𝗜𝗠𝗡𝗔𝗦𝗔-𝐅𝐑𝐎𝐌-𝗗𝗘𝗧𝗘𝗦𝗧𝗘𝗗*
-
-_Don't Forget To Give Star To My Repo_`
+┃𝘾𝙊𝙉𝙉𝙀𝘾𝙏𝙀𝘿
+`
  await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id,{text:GIFTED_MD_TEXT},{quoted:session})
  
 
